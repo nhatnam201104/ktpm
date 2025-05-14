@@ -86,14 +86,22 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `deleted`, `img_url`) VALUES
-(2, 'IPhone', 0, 'public/assets/images/catagories/tshirt.png'),
-(3, 'Samsung', 0, 'public/assets/images/catagories/jeans.png'),
-(5, 'Xiaomi', 0, 'public/assets/images/catagories/sneakers.png'),
-(6, 'OPPO', 0, 'public/assets/images/catagories/glasses.png'),
-(7, 'Realme', 0, 'public/assets/images/catagories/straw-hat.png'),
-(8, 'vivo', 0, 'public/assets/images/catagories/handbag.png'),
-(9, 'Nokia', 0, 'public/assets/images/catagories/dress.png'),
-(10, 'Sony', 0, 'public/assets/images/catagories/tuxedo.png');
+(2, 'IPhone', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/tshirt.png'),
+(3, 'Samsung', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/jeans.png'),
+(5, 'Xiaomi', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/sneakers.png'),
+(6, 'OPPO', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/glasses.png'),
+(7, 'Realme', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/straw-hat.png'),
+(8, 'vivo', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/handbag.png'),
+(9, 'Nokia', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/dress.png'),
+(10, 'Sony', 0, 'public/http://localhost/Web2_liquen/admin/assets
+/images/catagories/tuxedo.png');
 
 -- --------------------------------------------------------
 
@@ -1020,85 +1028,164 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `discount_id`, `name`, `featured_image`, `category_id`, `brand_id`, `created_date`, `description`, `deleted`, `updated_at`, `featured`) VALUES
-(140, 3, 'iPhone 16 Pro 128GB | Chính hãng VN/A', 'assets/img/iphone-16-pro_1.webp', 2, 1, '2024-11-01 05:12:32', '???', 0, '2025-02-12 04:12:57', 0),
-(141, 0, 'iPhone 16 Pro Max 256GB | Chính hãng VN/A', 'assets/img/iphone-16-pro-max.webp', 2, 1, '2024-11-01 05:15:49', '', 0, '2024-11-01 05:57:13', 0),
-(142, 0, 'iPhone 15 Pro Max 256GB | Chính hãng VN/A', 'assets/img/iphone-15-pro-max_3.webp', 2, 1, '2024-11-01 05:18:39', '', 0, '2024-11-01 05:57:16', 0),
-(143, 0, 'iPhone 16 128GB | Chính hãng VN/A', 'assets/img/iphone-16-1.webp', 2, 1, '2024-11-01 05:19:16', '', 0, '2024-11-01 05:57:20', 0),
-(144, 1, 'iPhone 13 128GB | Chính hãng VN/A', 'assets/img/iphone-13_2_.webp', 2, 1, '2024-11-01 05:56:58', '????', 0, '2025-02-12 03:49:36', 0),
-(145, 0, 'iPhone 15 128GB | Chính hãng VN/A', 'assets/img/iphone-15-plus_1_.webp', 2, 1, '2024-11-01 06:41:40', '', 0, '2024-11-01 12:00:53', 0),
-(146, 0, 'iPhone 14 Pro Max 128GB | Chính hãng VN/A', 'assets/img/iphone-14-pro_2__5.webp', 2, 1, '2024-11-01 06:42:11', '', 0, '2024-11-01 12:00:50', 0),
-(147, 0, 'iPhone 12 Pro Max 128GB I Chính hãng VN/A ', 'assets/img/679dc8415dbc9.png', 2, 1, '2024-11-01 06:43:05', 'fsdfdsfsd', 0, '2025-02-01 07:07:45', 0),
-(148, 0, 'iPhone 15 Plus 128GB | Chính hãng VN/A', 'assets/img/iphone-15-plus_1__1.webp', 2, 1, '2024-11-01 06:43:27', '', 0, '2024-11-01 12:00:44', 0),
-(149, 0, 'iPhone 15 Pro 128GB | Chính hãng VN/A', 'assets/img/iphone-15-pro-max_4.webp', 2, 1, '2024-11-01 06:44:02', '', 0, '2024-11-01 12:00:41', 0),
-(150, 0, 'Samsung Galaxy Z Fold6 12GB 256GB', 'assets/img/samsung-galaxy-z-fold-6-xanh_5_.webp', 3, 1, '2024-11-01 07:00:26', '', 0, '2024-11-01 12:00:39', 0),
-(151, 0, 'Samsung Galaxy S24 Ultra 12GB 256GB', 'assets/img/ss-s24-ultra-xam-222.webp', 3, 1, '2024-11-01 07:00:58', '', 0, '2024-11-01 12:00:34', 0),
-(152, 0, 'Samsung Galaxy S23 Ultra 12GB 512GB ', 'assets/img/samsung-s23-ulatra_2_.webp', 3, 1, '2024-11-01 07:01:29', '', 0, '2024-11-01 12:00:31', 0),
-(153, 0, 'Samsung Galaxy S24 FE 5G 8GB 128GB', 'assets/img/dien-thoai-samsung-galaxy-s24-fe_3__4.webp', 3, 1, '2024-11-01 07:02:20', '', 0, '2024-11-01 12:00:27', 0),
-(154, 0, 'Samsung Galaxy M55 (12GB 256GB) ', 'assets/img/dien-thoai-samsung-galaxy-m55.webp', 3, 1, '2024-11-01 07:02:50', '', 0, '2024-11-01 12:00:24', 0),
-(155, 0, 'Samsung Galaxy Z Flip6 12GB 256GB', 'assets/img/samsung-galaxy-z-flip-6-xanh-duong-6_2.webp', 3, 1, '2024-11-01 07:03:23', '', 0, '2024-11-01 12:00:21', 0),
-(156, 0, 'Samsung Galaxy Z Flip5 512GB', 'assets/img/samsung-z-lip5_1__1.webp', 3, 1, '2024-11-01 07:13:11', '', 0, '2024-11-01 12:00:18', 0),
-(157, 0, 'Samsung Galaxy A15 LTE 8GB 128GB', 'assets/img/galaxy-a15-xanh-01.webp', 3, 1, '2024-11-01 07:14:41', '', 0, '2024-11-01 12:00:15', 0),
-(158, 0, 'Samsung Galaxy S23 8GB 128GB ', 'assets/img/samsung-s23_1.webp', 3, 1, '2024-11-01 07:15:15', '', 0, '2024-11-01 12:00:12', 0),
-(159, 0, 'Samsung Galaxy A55 5G 8GB 128GB', 'assets/img/sm-a556_galaxy_a55_awesome_lilac_ui.webp', 3, 1, '2024-11-01 07:15:38', '', 0, '2024-11-01 12:00:07', 0),
-(160, 0, 'Xiaomi 14T 12GB 512GB', 'assets/img/xiaomi_14t_2_.webp', 5, 1, '2024-11-01 07:21:16', '', 0, '2024-11-01 12:00:01', 0),
-(161, 0, 'Xiaomi 14T Pro 12GB 512GB', 'assets/img/xiaomi_14t_pro_1_.webp', 5, 1, '2024-11-01 07:22:35', '', 0, '2024-11-01 11:59:59', 0),
-(162, 0, 'Xiaomi POCO X6 Pro 5G 8GB 256GB', 'assets/img/t_i_xu_ng_22__6.webp', 5, 1, '2024-11-01 07:23:09', '', 0, '2024-11-01 11:59:55', 0),
-(163, 0, 'Xiaomi Redmi Note 13 (6GB 128GB)', 'assets/img/xiaomi-redmi-note-13_1__1_1.webp', 5, 1, '2024-11-01 07:23:33', '', 0, '2024-11-01 11:59:52', 0),
-(164, 0, 'Xiaomi Redmi Note 13 Pro 4G', 'assets/img/xiaomi-redmi-note-13-pro-4g_13__1.webp', 5, 1, '2024-11-01 07:23:59', '', 0, '2024-11-01 11:59:48', 0),
-(165, 0, 'Xiaomi Redmi Note 13 Pro Plus 5G 8GB 256GB', 'assets/img/xiaomi-redmi-note-13-pro-plus_9_.webp', 5, 1, '2024-11-01 07:24:29', '', 0, '2024-11-01 11:59:46', 0),
-(166, 0, 'Xiaomi Redmi 14C 4GB 128GB', 'assets/img/xiaomi_redmi_14c_5_.webp', 5, 1, '2024-11-01 07:26:12', '', 0, '2024-11-01 11:59:41', 0),
-(167, 0, 'Xiaomi POCO M6 (6GB 128GB) ', 'assets/img/poco-m6_1_.webp', 5, 1, '2024-11-01 07:26:50', '', 0, '2024-11-01 11:59:38', 0),
-(168, 0, 'Xiaomi 14 Ultra 5G (16GB 512GB)', 'assets/img/xiaomi-14-ultra_3.webp', 5, 1, '2024-11-01 07:27:20', '', 0, '2024-11-01 11:59:35', 0),
-(169, 0, 'Xiaomi 13T 12GB 256GB', 'assets/img/xiaomi-13t_1__1_2.webp', 5, 1, '2024-11-01 07:27:43', '', 0, '2024-11-01 11:59:27', 0),
-(170, 0, 'OPPO A3 (6GB 128GB)', 'assets/img/text_ng_n_7__2_102.webp', 6, 1, '2024-11-01 11:10:30', '', 0, '2024-11-01 11:59:24', 0),
-(171, 0, 'OPPO Reno12 F 5G (8GB 256GB)', 'assets/img/text_ng_n_4__6_73.webp', 6, 1, '2024-11-01 11:10:53', '', 0, '2024-11-01 11:59:21', 0),
-(172, 0, 'OPPO Reno12 5G (12GB 256GB)', 'assets/img/text_ng_n_5__7_70.webp', 6, 1, '2024-11-01 11:11:23', '', 0, '2024-11-01 11:59:19', 0),
-(173, 0, 'OPPO A79 5G (8GB 256GB)', 'assets/img/oppo-a79-tim.webp', 6, 1, '2024-11-01 11:11:54', '', 0, '2024-11-01 11:59:14', 0),
-(174, 0, 'OPPO Find X5 Pro 12GB 256GB', 'assets/img/download_1__6_6.webp', 6, 1, '2024-11-01 11:12:38', '', 0, '2024-11-01 11:59:11', 0),
-(175, 0, 'OPPO A18 4GB 128GB', 'assets/img/oppo-a18-den.webp', 6, 1, '2024-11-01 11:13:09', '', 0, '2024-11-01 11:59:08', 0),
-(176, 0, 'OPPO Reno10 Pro+ 5G 12GB 256GB', 'assets/img/oppo-reno10-pro-plus-tim.webp', 6, 1, '2024-11-01 11:13:52', '', 0, '2024-11-01 11:59:06', 0),
-(177, 0, 'OPPO Reno10 5G 8GB 256GB', 'assets/img/reno10_5g_-_combo_product_-_blue.webp', 6, 1, '2024-11-01 11:14:16', '', 0, '2024-11-01 11:59:01', 0),
-(178, 0, 'OPPO A3 (8GB - 256GB)', 'assets/img/text_ng_n_7__2_104.webp', 6, 1, '2024-11-01 11:14:47', '', 0, '2024-11-01 11:58:58', 0),
-(179, 0, 'OPPO A77s 8GB 128GB', 'assets/img/oppo-a55_1_.webp', 6, 1, '2024-11-01 11:15:15', '', 0, '2024-11-01 11:58:55', 0),
-(180, 0, 'vivo Y03 4GB 64GB', 'assets/img/y03.webp', 8, 1, '2024-11-01 11:17:53', '', 0, '2024-11-01 11:58:51', 0),
-(181, 0, 'Vivo Y100', 'assets/img/vivo-y100.webp', 8, 1, '2024-11-01 11:18:24', '', 0, '2024-11-01 11:58:48', 0),
-(182, 0, 'vivo V30E 12GB 256GB', 'assets/img/v30e_1_.webp', 8, 1, '2024-11-01 11:19:05', '', 0, '2024-11-01 11:58:44', 0),
-(183, 0, 'vivo Y19S 8GB 128GB ', 'assets/img/dien-thoai-vivo-y19s_1_1.webp', 8, 1, '2024-11-01 11:19:37', '', 0, '2024-11-01 11:58:40', 0),
-(184, 0, 'vivo V29E 8GB 256GB', 'assets/img/v29e.webp', 8, 1, '2024-11-01 11:20:06', '', 0, '2024-11-01 11:58:38', 0),
-(185, 0, 'vivo Y36 8GB 128GB', 'assets/img/vi-vo-y36_1_.webp', 8, 1, '2024-11-01 11:20:34', '', 0, '2024-11-01 11:58:35', 0),
-(186, 0, 'vivo Y17s 4GB 128GB', 'assets/img/y17s_1.webp', 8, 1, '2024-11-01 11:20:59', '', 0, '2024-11-01 11:58:31', 0),
-(187, 0, 'vivo V25e 8GB 128GB', 'assets/img/vivov25e.webp', 8, 1, '2024-11-01 11:21:24', '', 0, '2024-11-01 11:58:28', 0),
-(188, 0, 'vivo Y36 8GB 256GB', 'assets/img/y36.webp', 8, 1, '2024-11-01 11:21:52', '', 0, '2024-11-01 11:58:25', 0),
-(189, 0, 'vivo Y16 4GB 128GB', 'assets/img/vivo-y16.webp', 8, 1, '2024-11-01 11:22:16', '', 0, '2024-11-01 11:58:20', 0),
-(190, 0, 'realme C53 (8GB 256GB)', 'assets/img/realme-c53-vang-1.webp', 7, 1, '2024-11-01 11:25:11', '', 0, '2024-11-01 11:58:17', 0),
-(191, 0, 'realme C67 (8GB 128GB)', 'assets/img/realme-c67-1_1.webp', 7, 1, '2024-11-01 11:25:51', '', 0, '2024-11-01 11:58:14', 0),
-(192, 0, 'realme Note 60', 'assets/img/dien-thoai-realme-note-60-4gb-64gb_1.webp', 7, 1, '2024-11-01 11:26:35', '', 0, '2024-11-01 11:58:11', 0),
-(193, 0, 'realme C60 4GB 64GB', 'assets/img/dien-thoai-realme-c60_4__1.webp', 7, 1, '2024-11-01 11:27:00', '', 0, '2024-11-01 11:58:06', 0),
-(194, 0, 'realme C61 (4GB 128GB)', 'assets/img/dien-thoai-realme-c61_2__2.webp', 7, 1, '2024-11-01 11:27:31', '', 0, '2024-11-01 11:58:03', 0),
-(195, 0, ' realme C55 (6GB - 128GB)', 'assets/img/rgrgrtyt6.webp', 7, 1, '2024-11-01 11:28:10', '', 0, '2024-11-01 11:58:00', 0),
-(196, 0, 'realme C51 6GB 256GB', 'assets/img/realme-c51_2_1.webp', 7, 1, '2024-11-01 11:28:35', '', 0, '2024-11-01 11:57:58', 0),
-(197, 0, 'realme C61 (6GB 128GB)', 'assets/img/dien-thoai-realme-c61_2__2.webp', 7, 1, '2024-11-01 11:28:58', '', 0, '2024-11-01 11:57:56', 0),
-(198, 0, 'realme C33 4G (3GB -  32GB)', 'assets/img/1sdcsc.webp', 7, 1, '2024-11-01 11:30:28', '', 0, '2024-11-01 11:57:53', 0),
-(199, 0, 'realme C55 8GB 256GB', 'assets/img/rgrgrtyt6_1.webp', 7, 1, '2024-11-01 11:30:59', '', 0, '2024-11-01 11:57:50', 0),
-(200, 0, 'Nokia 220 4G', 'assets/img/nokia-220-4g_6_.webp', 9, 1, '2024-11-01 11:33:17', '', 0, '2024-11-01 11:57:47', 0),
-(201, 0, 'Nokia 3210 4G ', 'assets/img/nokia-3210-4g.webp', 9, 1, '2024-11-01 11:33:44', '', 0, '2024-11-01 11:57:44', 0),
-(202, 0, 'Nokia HMD 105 4G', 'assets/img/nokia-hmd-105-4g_3_.webp', 9, 1, '2024-11-01 11:34:09', '', 0, '2024-11-01 11:57:42', 0),
-(203, 0, 'Nokia 105 4G Pro', 'assets/img/nokia-105-4g-pro_1__1.webp', 9, 1, '2024-11-01 11:35:02', '', 0, '2024-11-01 11:57:39', 0),
-(204, 0, 'Điện thoại Nokia 8210 4G 128MB', 'assets/img/nokia-8210_4g-sand-front_back-int.webp', 9, 1, '2024-11-01 11:35:34', '', 0, '2024-11-01 11:57:32', 0),
-(205, 0, 'Nokia 110 4G Pro', 'assets/img/nokia-110-4g-pro_1__1.webp', 9, 1, '2024-11-01 11:35:58', '', 0, '2024-11-01 11:57:29', 0),
-(206, 0, 'Nokia 150', 'assets/img/nokia-150_1_1.webp', 9, 1, '2024-11-01 11:36:25', '', 0, '2024-11-01 11:57:26', 0),
-(207, 0, 'Nokia 130', 'assets/img/nokia-130.webp', 9, 1, '2024-11-01 11:36:49', '', 0, '2024-11-01 11:57:22', 0),
-(208, 0, 'Nokia C3', 'assets/img/nokia_5.3_0001_layer_1.webp', 9, 1, '2024-11-01 11:37:17', '', 0, '2024-11-01 11:57:19', 0),
-(209, 0, 'Nokia XR21 5G', 'assets/img/nokia-xr21.webp', 9, 1, '2024-11-01 11:37:40', '', 0, '2024-11-01 11:57:16', 0),
-(210, 0, 'Điện thoại Sony Xperia 1VI 12GB 256GB', 'assets/img/67ac0937473ca.png', 10, 1, '2024-11-01 11:44:17', '', 0, '2025-02-12 02:36:39', 0),
-(211, 0, 'Điện thoại Sony Xperia 10VI 8GB 128GB', 'assets/img/dien-thoai-sony-xperia-10-vi_1_.webp', 10, 1, '2024-11-01 11:44:46', '', 0, '2024-11-01 11:57:10', 0),
-(212, 0, 'Điện thoại Sony Xperia 10 V', 'assets/img/sony-xperia-10-v_1_.webp', 10, 1, '2024-11-01 11:45:25', '', 0, '2024-11-01 11:57:08', 0),
-(213, 0, 'Điện thoại Sony Xperia 1V 12GB 256GB', 'assets/img/sony-xperia-1-v.webp', 10, 1, '2024-11-01 11:46:00', '', 0, '2024-11-01 11:57:04', 0),
-(214, 0, 'Sony Xperia 5 IV', 'assets/img/1_245.webp', 10, 1, '2024-11-01 11:46:37', '', 0, '2024-11-01 11:57:01', 0),
-(215, 0, 'Sony Xperia X Compact', 'assets/img/sony-xperia-x-compact_2_.webp', 10, 1, '2024-11-01 11:47:04', '', 0, '2024-11-01 11:56:59', 0),
-(216, 0, 'Xperia 5 V', 'assets/img/sony-xperia-5v.webp', 10, 1, '2024-11-01 11:47:35', '', 0, '2024-11-01 11:56:56', 0),
-(217, 0, 'Sony Xperia XZ3', 'assets/img/xz3-black.webp', 10, 1, '2024-11-01 11:48:05', 'fsffsf', 0, '2025-02-12 02:41:43', 0),
-(234, 0, 'Iphone 12 promaxx', 'assets/img/679dc3214cc55.png', 2, 1, '2025-02-01 05:04:49', '??????????', 0, '2025-02-12 03:42:41', 0);
+(140, 3, 'iPhone 16 Pro 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-16-pro_1.webp', 2, 1, '2024-11-01 05:12:32', '???', 0, '2025-02-12 04:12:57', 0),
+(141, 0, 'iPhone 16 Pro Max 256GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-16-pro-max.webp', 2, 1, '2024-11-01 05:15:49', '', 0, '2024-11-01 05:57:13', 0),
+(142, 0, 'iPhone 15 Pro Max 256GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-15-pro-max_3.webp', 2, 1, '2024-11-01 05:18:39', '', 0, '2024-11-01 05:57:16', 0),
+(143, 0, 'iPhone 16 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-16-1.webp', 2, 1, '2024-11-01 05:19:16', '', 0, '2024-11-01 05:57:20', 0),
+(144, 1, 'iPhone 13 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-13_2_.webp', 2, 1, '2024-11-01 05:56:58', '????', 0, '2025-02-12 03:49:36', 0),
+(145, 0, 'iPhone 15 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-15-plus_1_.webp', 2, 1, '2024-11-01 06:41:40', '', 0, '2024-11-01 12:00:53', 0),
+(146, 0, 'iPhone 14 Pro Max 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-14-pro_2__5.webp', 2, 1, '2024-11-01 06:42:11', '', 0, '2024-11-01 12:00:50', 0),
+(147, 0, 'iPhone 12 Pro Max 128GB I Chính hãng VN/A ', 'http://localhost/Web2_liquen/admin/assets
+/img/679dc8415dbc9.png', 2, 1, '2024-11-01 06:43:05', 'fsdfdsfsd', 0, '2025-02-01 07:07:45', 0),
+(148, 0, 'iPhone 15 Plus 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-15-plus_1__1.webp', 2, 1, '2024-11-01 06:43:27', '', 0, '2024-11-01 12:00:44', 0),
+(149, 0, 'iPhone 15 Pro 128GB | Chính hãng VN/A', 'http://localhost/Web2_liquen/admin/assets
+/img/iphone-15-pro-max_4.webp', 2, 1, '2024-11-01 06:44:02', '', 0, '2024-11-01 12:00:41', 0),
+(150, 0, 'Samsung Galaxy Z Fold6 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/samsung-galaxy-z-fold-6-xanh_5_.webp', 3, 1, '2024-11-01 07:00:26', '', 0, '2024-11-01 12:00:39', 0),
+(151, 0, 'Samsung Galaxy S24 Ultra 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/ss-s24-ultra-xam-222.webp', 3, 1, '2024-11-01 07:00:58', '', 0, '2024-11-01 12:00:34', 0),
+(152, 0, 'Samsung Galaxy S23 Ultra 12GB 512GB ', 'http://localhost/Web2_liquen/admin/assets
+/img/samsung-s23-ulatra_2_.webp', 3, 1, '2024-11-01 07:01:29', '', 0, '2024-11-01 12:00:31', 0),
+(153, 0, 'Samsung Galaxy S24 FE 5G 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-samsung-galaxy-s24-fe_3__4.webp', 3, 1, '2024-11-01 07:02:20', '', 0, '2024-11-01 12:00:27', 0),
+(154, 0, 'Samsung Galaxy M55 (12GB 256GB) ', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-samsung-galaxy-m55.webp', 3, 1, '2024-11-01 07:02:50', '', 0, '2024-11-01 12:00:24', 0),
+(155, 0, 'Samsung Galaxy Z Flip6 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/samsung-galaxy-z-flip-6-xanh-duong-6_2.webp', 3, 1, '2024-11-01 07:03:23', '', 0, '2024-11-01 12:00:21', 0),
+(156, 0, 'Samsung Galaxy Z Flip5 512GB', 'http://localhost/Web2_liquen/admin/assets
+/img/samsung-z-lip5_1__1.webp', 3, 1, '2024-11-01 07:13:11', '', 0, '2024-11-01 12:00:18', 0),
+(157, 0, 'Samsung Galaxy A15 LTE 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/galaxy-a15-xanh-01.webp', 3, 1, '2024-11-01 07:14:41', '', 0, '2024-11-01 12:00:15', 0),
+(158, 0, 'Samsung Galaxy S23 8GB 128GB ', 'http://localhost/Web2_liquen/admin/assets
+/img/samsung-s23_1.webp', 3, 1, '2024-11-01 07:15:15', '', 0, '2024-11-01 12:00:12', 0),
+(159, 0, 'Samsung Galaxy A55 5G 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/sm-a556_galaxy_a55_awesome_lilac_ui.webp', 3, 1, '2024-11-01 07:15:38', '', 0, '2024-11-01 12:00:07', 0),
+(160, 0, 'Xiaomi 14T 12GB 512GB', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi_14t_2_.webp', 5, 1, '2024-11-01 07:21:16', '', 0, '2024-11-01 12:00:01', 0),
+(161, 0, 'Xiaomi 14T Pro 12GB 512GB', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi_14t_pro_1_.webp', 5, 1, '2024-11-01 07:22:35', '', 0, '2024-11-01 11:59:59', 0),
+(162, 0, 'Xiaomi POCO X6 Pro 5G 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/t_i_xu_ng_22__6.webp', 5, 1, '2024-11-01 07:23:09', '', 0, '2024-11-01 11:59:55', 0),
+(163, 0, 'Xiaomi Redmi Note 13 (6GB 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi-redmi-note-13_1__1_1.webp', 5, 1, '2024-11-01 07:23:33', '', 0, '2024-11-01 11:59:52', 0),
+(164, 0, 'Xiaomi Redmi Note 13 Pro 4G', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi-redmi-note-13-pro-4g_13__1.webp', 5, 1, '2024-11-01 07:23:59', '', 0, '2024-11-01 11:59:48', 0),
+(165, 0, 'Xiaomi Redmi Note 13 Pro Plus 5G 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi-redmi-note-13-pro-plus_9_.webp', 5, 1, '2024-11-01 07:24:29', '', 0, '2024-11-01 11:59:46', 0),
+(166, 0, 'Xiaomi Redmi 14C 4GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi_redmi_14c_5_.webp', 5, 1, '2024-11-01 07:26:12', '', 0, '2024-11-01 11:59:41', 0),
+(167, 0, 'Xiaomi POCO M6 (6GB 128GB) ', 'http://localhost/Web2_liquen/admin/assets
+/img/poco-m6_1_.webp', 5, 1, '2024-11-01 07:26:50', '', 0, '2024-11-01 11:59:38', 0),
+(168, 0, 'Xiaomi 14 Ultra 5G (16GB 512GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi-14-ultra_3.webp', 5, 1, '2024-11-01 07:27:20', '', 0, '2024-11-01 11:59:35', 0),
+(169, 0, 'Xiaomi 13T 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/xiaomi-13t_1__1_2.webp', 5, 1, '2024-11-01 07:27:43', '', 0, '2024-11-01 11:59:27', 0),
+(170, 0, 'OPPO A3 (6GB 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/text_ng_n_7__2_102.webp', 6, 1, '2024-11-01 11:10:30', '', 0, '2024-11-01 11:59:24', 0),
+(171, 0, 'OPPO Reno12 F 5G (8GB 256GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/text_ng_n_4__6_73.webp', 6, 1, '2024-11-01 11:10:53', '', 0, '2024-11-01 11:59:21', 0),
+(172, 0, 'OPPO Reno12 5G (12GB 256GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/text_ng_n_5__7_70.webp', 6, 1, '2024-11-01 11:11:23', '', 0, '2024-11-01 11:59:19', 0),
+(173, 0, 'OPPO A79 5G (8GB 256GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/oppo-a79-tim.webp', 6, 1, '2024-11-01 11:11:54', '', 0, '2024-11-01 11:59:14', 0),
+(174, 0, 'OPPO Find X5 Pro 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/download_1__6_6.webp', 6, 1, '2024-11-01 11:12:38', '', 0, '2024-11-01 11:59:11', 0),
+(175, 0, 'OPPO A18 4GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/oppo-a18-den.webp', 6, 1, '2024-11-01 11:13:09', '', 0, '2024-11-01 11:59:08', 0),
+(176, 0, 'OPPO Reno10 Pro+ 5G 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/oppo-reno10-pro-plus-tim.webp', 6, 1, '2024-11-01 11:13:52', '', 0, '2024-11-01 11:59:06', 0),
+(177, 0, 'OPPO Reno10 5G 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/reno10_5g_-_combo_product_-_blue.webp', 6, 1, '2024-11-01 11:14:16', '', 0, '2024-11-01 11:59:01', 0),
+(178, 0, 'OPPO A3 (8GB - 256GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/text_ng_n_7__2_104.webp', 6, 1, '2024-11-01 11:14:47', '', 0, '2024-11-01 11:58:58', 0),
+(179, 0, 'OPPO A77s 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/oppo-a55_1_.webp', 6, 1, '2024-11-01 11:15:15', '', 0, '2024-11-01 11:58:55', 0),
+(180, 0, 'vivo Y03 4GB 64GB', 'http://localhost/Web2_liquen/admin/assets
+/img/y03.webp', 8, 1, '2024-11-01 11:17:53', '', 0, '2024-11-01 11:58:51', 0),
+(181, 0, 'Vivo Y100', 'http://localhost/Web2_liquen/admin/assets
+/img/vivo-y100.webp', 8, 1, '2024-11-01 11:18:24', '', 0, '2024-11-01 11:58:48', 0),
+(182, 0, 'vivo V30E 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/v30e_1_.webp', 8, 1, '2024-11-01 11:19:05', '', 0, '2024-11-01 11:58:44', 0),
+(183, 0, 'vivo Y19S 8GB 128GB ', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-vivo-y19s_1_1.webp', 8, 1, '2024-11-01 11:19:37', '', 0, '2024-11-01 11:58:40', 0),
+(184, 0, 'vivo V29E 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/v29e.webp', 8, 1, '2024-11-01 11:20:06', '', 0, '2024-11-01 11:58:38', 0),
+(185, 0, 'vivo Y36 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/vi-vo-y36_1_.webp', 8, 1, '2024-11-01 11:20:34', '', 0, '2024-11-01 11:58:35', 0),
+(186, 0, 'vivo Y17s 4GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/y17s_1.webp', 8, 1, '2024-11-01 11:20:59', '', 0, '2024-11-01 11:58:31', 0),
+(187, 0, 'vivo V25e 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/vivov25e.webp', 8, 1, '2024-11-01 11:21:24', '', 0, '2024-11-01 11:58:28', 0),
+(188, 0, 'vivo Y36 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/y36.webp', 8, 1, '2024-11-01 11:21:52', '', 0, '2024-11-01 11:58:25', 0),
+(189, 0, 'vivo Y16 4GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/vivo-y16.webp', 8, 1, '2024-11-01 11:22:16', '', 0, '2024-11-01 11:58:20', 0),
+(190, 0, 'realme C53 (8GB 256GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/realme-c53-vang-1.webp', 7, 1, '2024-11-01 11:25:11', '', 0, '2024-11-01 11:58:17', 0),
+(191, 0, 'realme C67 (8GB 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/realme-c67-1_1.webp', 7, 1, '2024-11-01 11:25:51', '', 0, '2024-11-01 11:58:14', 0),
+(192, 0, 'realme Note 60', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-realme-note-60-4gb-64gb_1.webp', 7, 1, '2024-11-01 11:26:35', '', 0, '2024-11-01 11:58:11', 0),
+(193, 0, 'realme C60 4GB 64GB', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-realme-c60_4__1.webp', 7, 1, '2024-11-01 11:27:00', '', 0, '2024-11-01 11:58:06', 0),
+(194, 0, 'realme C61 (4GB 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-realme-c61_2__2.webp', 7, 1, '2024-11-01 11:27:31', '', 0, '2024-11-01 11:58:03', 0),
+(195, 0, ' realme C55 (6GB - 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/rgrgrtyt6.webp', 7, 1, '2024-11-01 11:28:10', '', 0, '2024-11-01 11:58:00', 0),
+(196, 0, 'realme C51 6GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/realme-c51_2_1.webp', 7, 1, '2024-11-01 11:28:35', '', 0, '2024-11-01 11:57:58', 0),
+(197, 0, 'realme C61 (6GB 128GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-realme-c61_2__2.webp', 7, 1, '2024-11-01 11:28:58', '', 0, '2024-11-01 11:57:56', 0),
+(198, 0, 'realme C33 4G (3GB -  32GB)', 'http://localhost/Web2_liquen/admin/assets
+/img/1sdcsc.webp', 7, 1, '2024-11-01 11:30:28', '', 0, '2024-11-01 11:57:53', 0),
+(199, 0, 'realme C55 8GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/rgrgrtyt6_1.webp', 7, 1, '2024-11-01 11:30:59', '', 0, '2024-11-01 11:57:50', 0),
+(200, 0, 'Nokia 220 4G', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-220-4g_6_.webp', 9, 1, '2024-11-01 11:33:17', '', 0, '2024-11-01 11:57:47', 0),
+(201, 0, 'Nokia 3210 4G ', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-3210-4g.webp', 9, 1, '2024-11-01 11:33:44', '', 0, '2024-11-01 11:57:44', 0),
+(202, 0, 'Nokia HMD 105 4G', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-hmd-105-4g_3_.webp', 9, 1, '2024-11-01 11:34:09', '', 0, '2024-11-01 11:57:42', 0),
+(203, 0, 'Nokia 105 4G Pro', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-105-4g-pro_1__1.webp', 9, 1, '2024-11-01 11:35:02', '', 0, '2024-11-01 11:57:39', 0),
+(204, 0, 'Điện thoại Nokia 8210 4G 128MB', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-8210_4g-sand-front_back-int.webp', 9, 1, '2024-11-01 11:35:34', '', 0, '2024-11-01 11:57:32', 0),
+(205, 0, 'Nokia 110 4G Pro', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-110-4g-pro_1__1.webp', 9, 1, '2024-11-01 11:35:58', '', 0, '2024-11-01 11:57:29', 0),
+(206, 0, 'Nokia 150', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-150_1_1.webp', 9, 1, '2024-11-01 11:36:25', '', 0, '2024-11-01 11:57:26', 0),
+(207, 0, 'Nokia 130', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-130.webp', 9, 1, '2024-11-01 11:36:49', '', 0, '2024-11-01 11:57:22', 0),
+(208, 0, 'Nokia C3', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia_5.3_0001_layer_1.webp', 9, 1, '2024-11-01 11:37:17', '', 0, '2024-11-01 11:57:19', 0),
+(209, 0, 'Nokia XR21 5G', 'http://localhost/Web2_liquen/admin/assets
+/img/nokia-xr21.webp', 9, 1, '2024-11-01 11:37:40', '', 0, '2024-11-01 11:57:16', 0),
+(210, 0, 'Điện thoại Sony Xperia 1VI 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/67ac0937473ca.png', 10, 1, '2024-11-01 11:44:17', '', 0, '2025-02-12 02:36:39', 0),
+(211, 0, 'Điện thoại Sony Xperia 10VI 8GB 128GB', 'http://localhost/Web2_liquen/admin/assets
+/img/dien-thoai-sony-xperia-10-vi_1_.webp', 10, 1, '2024-11-01 11:44:46', '', 0, '2024-11-01 11:57:10', 0),
+(212, 0, 'Điện thoại Sony Xperia 10 V', 'http://localhost/Web2_liquen/admin/assets
+/img/sony-xperia-10-v_1_.webp', 10, 1, '2024-11-01 11:45:25', '', 0, '2024-11-01 11:57:08', 0),
+(213, 0, 'Điện thoại Sony Xperia 1V 12GB 256GB', 'http://localhost/Web2_liquen/admin/assets
+/img/sony-xperia-1-v.webp', 10, 1, '2024-11-01 11:46:00', '', 0, '2024-11-01 11:57:04', 0),
+(214, 0, 'Sony Xperia 5 IV', 'http://localhost/Web2_liquen/admin/assets
+/img/1_245.webp', 10, 1, '2024-11-01 11:46:37', '', 0, '2024-11-01 11:57:01', 0),
+(215, 0, 'Sony Xperia X Compact', 'http://localhost/Web2_liquen/admin/assets
+/img/sony-xperia-x-compact_2_.webp', 10, 1, '2024-11-01 11:47:04', '', 0, '2024-11-01 11:56:59', 0),
+(216, 0, 'Xperia 5 V', 'http://localhost/Web2_liquen/admin/assets
+/img/sony-xperia-5v.webp', 10, 1, '2024-11-01 11:47:35', '', 0, '2024-11-01 11:56:56', 0),
+(217, 0, 'Sony Xperia XZ3', 'http://localhost/Web2_liquen/admin/assets
+/img/xz3-black.webp', 10, 1, '2024-11-01 11:48:05', 'fsffsf', 0, '2025-02-12 02:41:43', 0),
+(234, 0, 'Iphone 12 promaxx', 'http://localhost/Web2_liquen/admin/assets
+/img/679dc3214cc55.png', 2, 1, '2025-02-01 05:04:49', '??????????', 0, '2025-02-12 03:42:41', 0);
 
 -- --------------------------------------------------------
 
@@ -12869,3 +12956,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ktpm
