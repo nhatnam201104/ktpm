@@ -27,34 +27,38 @@ if ($id != '' && $id > 0) {
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 <div class="row" style="margin-top: 20px;">
-	<div class="col-md-12 table-responsive">
-		<h3>Hình ảnh sản phẩm</h3>
-		<div class="panel panel-primary">
-			<div class="panel-body">
-			<input required="true" type="hidden" class="form-control" id="id" name="id" value="<?= $id ?>">
-				<div class="row">
-					<div class="col-md-12 col-12" style="border: solid grey 1px; padding-top: 10px; padding-bottom: 10px;">
-						<div class="form-group">
-							<label for="featured_image">featured_image:</label>
-							<input type="file" class="form-control" id="featured_image" name="featured_image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
-							<img id="thumbnail_img" src="../<?= ($featured_image) ?>" style="max-height: 160px; margin-top: 5px; margin-bottom: 15px;">
-							<input type="hidden" name="old_featured_image" id="old_featured_image" value="<?= $featured_image ?>">
-						</div>
+    <div class="col-md-12 table-responsive">
+        <h3>Hình ảnh sản phẩm</h3>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <input required="true" type="hidden" class="form-control" id="id" name="id" value="<?= $id ?>">
+                <div class="row">
+                    <div class="col-md-12 col-12"
+                        style="border: solid grey 1px; padding-top: 10px; padding-bottom: 10px;">
+                        <div class="form-group">
+                            <label for="featured_image">featured_image:</label>
+                            <input type="file" class="form-control" id="featured_image" name="featured_image"
+                                accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
+                            <img id="thumbnail_img" src="<?= ($featured_image) ?>"
+                                style="max-height: 160px; margin-top: 5px; margin-bottom: 15px;">
+                            <input type="hidden" name="old_featured_image" id="old_featured_image"
+                                value="<?= $featured_image ?>">
+                        </div>
                         <button class="btn btn-success" id="saveButton">Lưu hình ảnh</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="alert-overlay" id="alert-overlay">
-	<div class="alert-dialog">
-		<h2>Thông Báo</h2>
-		<p id="alert-message"></p>
-		<p>Giá trị alert: <span id="alert-value"></span></p>
-		<button onclick="hideAlert()">Đóng</button>
-	</div>
+    <div class="alert-dialog">
+        <h2>Thông Báo</h2>
+        <p id="alert-message"></p>
+        <p>Giá trị alert: <span id="alert-value"></span></p>
+        <button onclick="hideAlert()">Đóng</button>
+    </div>
 </div>
 
 <!-- <script type="text/javascript">
@@ -63,7 +67,7 @@ if ($id != '' && $id > 0) {
 	}
 </script> -->
 <script>
-	$('#saveButton').click(function() {
+$('#saveButton').click(function() {
     const id = $('#id').val();
     const old_img = $('#old_featured_image').val();
     const featured_image = $('#featured_image')[0].files[0];
@@ -77,25 +81,25 @@ if ($id != '' && $id > 0) {
         formData.append('featured_image', featured_image);
     }
 
-    const method ='POST';
-     const url = './form_save.php';
-     fetch(url, {
-         method: method,
-         body: formData, // Gửi formData
-     })
-         .then(response => response.json())
-         .then(result => {
-             if (result.code === 200) {
-                 alert(result.message);
-                 location.reload();
-             } else {
-                 alert('Đã xảy ra lỗi: ' + (result.message || 'Không rõ nguyên nhân'));
-             }
-         })
-         .catch(error => {
-             console.error('Error:', error);
-             alert('Lỗi khi gửi yêu cầu đến server!');
-         });
+    const method = 'POST';
+    const url = './form_save.php';
+    fetch(url, {
+            method: method,
+            body: formData, // Gửi formData
+        })
+        .then(response => response.json())
+        .then(result => {
+            if (result.code === 200) {
+                alert(result.message);
+                location.reload();
+            } else {
+                alert('Đã xảy ra lỗi: ' + (result.message || 'Không rõ nguyên nhân'));
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Lỗi khi gửi yêu cầu đến server!');
+        });
 });
 </script>
 

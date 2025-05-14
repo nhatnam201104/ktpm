@@ -521,7 +521,7 @@ function displayCart(data) {
                         '<div class="row">'+             
                             '<div class="col-sm-6 col-md-1">'+
                                 '<div>'+
-                                    '<img class="img-responsive" src="../admin/' + item.img + '" alt="' + item.name + ' ">'+             
+                                    '<img class="img-responsive" src="' + item.img + '" alt="' + item.name + ' ">'+             
                                 '</div>'+
                             '</div>'+
                             '<div class="col-sm-6 col-md-3">'+

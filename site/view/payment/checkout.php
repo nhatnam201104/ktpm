@@ -1,4 +1,4 @@
-<?php require "layout/header.php" ?>   
+<?php require "layout/header.php" ?>
 <main id="maincontent" class="page-main">
     <div class="container">
         <div class="row">
@@ -12,23 +12,23 @@
         </div>
         <div class="row">
             <aside class="col-md-6 cart-checkout">
-                <?php 
+                <?php
                 $items = $cart->getItems();
                 foreach ($items as $item):
-                // var_dump($item);
-                ?>
+                    // var_dump($item);
+                    ?>
                 <div class="row">
                     <div class="col-xs-2">
-                        <img class="img-responsive" src="../admin/<?=$item["img"]?>"
-                            alt="<?=$item["name"]?>">
+                        <img class="img-responsive" src="<?= $item["img"] ?>" alt="<?= $item["name"] ?>">
                     </div>
                     <div class="col-xs-7">
-                        <a class="product-name" href="index.php?c=product&a=show&id=<?=$item["product_id"]?>"><?=$item["name"]?></a>
+                        <a class="product-name"
+                            href="index.php?c=product&a=show&id=<?= $item["product_id"] ?>"><?= $item["name"] ?></a>
                         <br>
-                        <span><?=$item["qty"]?></span> x <span><?=number_format($item["unit_price"])?>₫</span>
+                        <span><?= $item["qty"] ?></span> x <span><?= number_format($item["unit_price"]) ?>₫</span>
                     </div>
                     <div class="col-xs-3 text-right">
-                        <span><?=number_format($item["total_price"])?>₫</span>
+                        <span><?= number_format($item["total_price"]) ?>₫</span>
                     </div>
                 </div>
                 <hr>
@@ -39,7 +39,8 @@
                         Tổng cộng
                     </div>
                     <div class="col-xs-6 text-right">
-                        <span class="payment-total" data="<?=$cart->getTotalPrice()?>"><?=number_format($cart->getTotalPrice())?>₫</span>
+                        <span class="payment-total"
+                            data="<?= $cart->getTotalPrice() ?>"><?= number_format($cart->getTotalPrice()) ?>₫</span>
                     </div>
                 </div>
             </aside>
@@ -50,7 +51,7 @@
                 <br>
                 <?php endif ?>
                 <form action="index.php?c=payment&a=order" method="POST">
-                    <?php require "layout/address.php"?>
+                    <?php require "layout/address.php" ?>
                     <h4>Phương thức thanh toán</h4>
                     <div class="form-group">
                         <label> <input type="radio" name="payment_method" checked="" value="0"> Thanh toán khi giao hàng
@@ -59,7 +60,8 @@
                     </div>
                     <div class="form-group">
                         <label> <input type="radio" name="payment_method" value="1"> Chuyển khoản qua ngân hàng </label>
-                        <div class="bank-info">STK: 101867509720<br>Chủ TK: Phan Thanh Thoại. Ngân hàng: VietinBank CN Thủ Đức TP.HCM <br>
+                        <div class="bank-info">STK: 101867509720<br>Chủ TK: Phan Thanh Thoại. Ngân hàng: VietinBank CN
+                            Thủ Đức TP.HCM <br>
                             Ghi chú chuyển khoản là tên và chụp hình gửi lại cho shop dễ kiểm tra ạ
                         </div>
                     </div>
